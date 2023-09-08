@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_account_navbar"
+    app:startDestination="@id/selectingCountryPage">
+    <fragment
+        android:id="@+id/selectingCountryPage"
+        android:name="com.zireddinismayilov.recipeapp.SettingAccount.Fragments.SelectingCountryPage"
+        android:label="fragment_selecting_country_page"
+        tools:layout="@layout/fragment_selecting_country_page" >
+        <action
+            android:id="@+id/action_selectingCountryPage_to_selectingPrefrencesPage"
+            app:destination="@id/selectingPrefrencesPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectingPrefrencesPage"
+        android:name="com.zireddinismayilov.recipeapp.SettingAccount.Fragments.SelectingPrefrencesPage"
+        android:label="fragment_selecting_prefrences_page"
+        tools:layout="@layout/fragment_selecting_prefrences_page" />
+</navigation>
