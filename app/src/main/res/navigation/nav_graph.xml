@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pageFirstFragment">
+
+
+    <fragment
+        android:id="@+id/pageFirstFragment"
+        android:name="com.zireddinismayilov.recipeapp.onboarding.PageFirstFragment"
+        android:label="fragment_page_first"
+        tools:layout="@layout/fragment_page_first" >
+        <action
+            android:id="@+id/action_pageFirstFragment_to_siginupragment"
+            app:destination="@id/siginupragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/siginupragment"
+        android:name="com.zireddinismayilov.recipeapp.onboarding.Siginupragment"
+        android:label="fragment_sigininragment"
+        tools:layout="@layout/fragment_sigininragment" />
+</navigation>

@@ -6,4 +6,11 @@
     <string name="skip_onboarding_page_first">Skip</string>
     <string name="continue_splash">Continue</string>
     <string name="text_splash_first_frament">Recipes from all \n <font color="#F8C89A"> over the World</font></string>
+    <string name="continue_wi">Continue with</string>
+    <string name="or">or</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="email">Email<font color="#FF0000">*</font></string>
+    <string name="enter_your_email_id">Enter your Email ID</string>
+    <string name="password">Password<font color="#FF0000">*</font></string>
+    <string name="enter_a_password">Enter a Password</string>
 </resources>
