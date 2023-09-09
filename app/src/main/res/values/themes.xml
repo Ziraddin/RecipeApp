@@ -3,6 +3,16 @@
     <style name="Base.Theme.RecipeApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#0F9D58</item>
+        <item name="colorPrimaryVariant">#0F9D58</item>
+        <item name="colorOnPrimary">#000</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="Theme.RecipeApp" parent="Base.Theme.RecipeApp" />
@@ -23,5 +33,9 @@
         <item name="android:textSize">15sp</item>
         <item name="android:letterSpacing">-0.03</item>
         <item name="android:textColor">#80000000</item>
+    </style>
+
+    <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
     </style>
 </resources>
