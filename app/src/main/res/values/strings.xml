@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RecipeApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_title">Cook it Eat it</string>
+    <string name="skip_onboarding_page_first">Skip</string>
+    <string name="continue_splash">Continue</string>
+    <string name="text_splash_first_frament">Recipes from all \n <font color="#F8C89A"> over the World</font></string>
 </resources>
