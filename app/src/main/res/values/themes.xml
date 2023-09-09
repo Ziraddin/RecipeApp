@@ -6,4 +6,22 @@
     </style>
 
     <style name="Theme.RecipeApp" parent="Base.Theme.RecipeApp" />
+
+    <style name="hungry_choo">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#E9455D</item>
+    </style>
+
+    <style name="trending_to">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#103C4A</item>
+    </style>
+
+    <style name="see_all">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">#80000000</item>
+    </style>
 </resources>

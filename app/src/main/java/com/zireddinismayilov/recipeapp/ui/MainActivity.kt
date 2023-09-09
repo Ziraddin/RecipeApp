@@ -1,4 +1,4 @@
-package com.zireddinismayilov.recipeapp
+package com.zireddinismayilov.recipeapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,5 +11,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }
-    //Karam
+
 }

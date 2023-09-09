@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RecipeApp</string>
+
+    <string name="hungry_choo">Hungry? Choose a dish...</string>
+    <string name="home_search_hint">What’s cooking in your mind...?</string>
+    <string name="trending_to">Trending Today</string>
+    <string name="see_all"><u>see all</u></string>
+    <string name="categories">Categories</string>
+    <string name="verified_ch">Verified Chefs</string>
 </resources>
