@@ -8,7 +8,7 @@
         android:id="@+id/selectingCountryPage"
         android:name="com.zireddinismayilov.recipeapp.SettingAccount.Fragments.SelectingCountryPage"
         android:label="fragment_selecting_country_page"
-        tools:layout="@layout/fragment_selecting_country_page" >
+        tools:layout="@layout/fragment_selecting_country_page">
         <action
             android:id="@+id/action_selectingCountryPage_to_selectingPrefrencesPage"
             app:destination="@id/selectingPrefrencesPage" />

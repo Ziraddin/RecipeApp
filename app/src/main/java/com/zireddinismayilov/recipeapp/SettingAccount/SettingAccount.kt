@@ -9,12 +9,12 @@ import com.zireddinismayilov.recipeapp.databinding.ActivitySettingAccountBinding
 class SettingAccount : AppCompatActivity() {
     lateinit var binding: ActivitySettingAccountBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivitySettingAccountBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
+        binding = ActivitySettingAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.setting_account_navbar) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
     }
 }
