@@ -3,10 +3,11 @@ package com.zireddinismayilov.recipeapp.SettingAccount.Fragments
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import com.zireddinismayilov.recipeapp.R
 import com.zireddinismayilov.recipeapp.SettingAccount.adapter.Adapter
 import com.zireddinismayilov.recipeapp.databinding.FragmentSelectingCountryPageBinding
@@ -87,13 +88,14 @@ class SelectingCountryPage : Fragment() {
     lateinit var binding: FragmentSelectingCountryPageBinding
     lateinit var adapter: Adapter
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
+
         binding = FragmentSelectingCountryPageBinding.inflate(inflater, container, false)
         adapter = Adapter(locations)
         binding.countriesRecyclerView.adapter = adapter
         search()
+        setUpBtn()
         return binding.root
     }
 
@@ -110,5 +112,14 @@ class SelectingCountryPage : Fragment() {
             override fun afterTextChanged(p0: Editable?) {}
 
         })
+    }
+
+    fun setUpBtn() {
+        binding.btn.setOnClickListener {
+            val navHostFragment =
+                requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+            val navController = navHostFragment.navController
+            navController.navigate(R.id.action_selectingCountryPage_to_selectingPrefrencesPage)
+        }
     }
 }

@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">RecipeApp</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="setting_up_your_kitchen">Setting up your Kitchen...</string>
     <string name="select_your_country">Select your Country</string>
     <string name="enter_your_country_s_name">Enter your country’s name</string>
     <string name="Continue">Continue</string>
+    <string name="select_your_prefrences">Select your prefrences</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="phone_no">Phone No.</string>
 </resources>

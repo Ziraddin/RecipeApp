@@ -7,29 +7,26 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.zireddinismayilov.recipeapp.R
 
-class Adapter(var locations: MutableList<String>) : RecyclerView.Adapter<Adapter.ViewHolder>() {
+class AdapterPref(var prefs: MutableList<String>) :
+    RecyclerView.Adapter<AdapterPref.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val countryTextView = itemView.findViewById<TextView>(R.id.CountryTV)
+        val prefTextView = itemView.findViewById<TextView>(R.id.prefTV)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.settings_row_item, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.selectingpref_row_item, parent, false)
         )
     }
 
     override fun getItemCount(): Int {
-        return locations.size
+        return prefs.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.countryTextView.text = locations[position]
-    }
-
-    fun filteredList(filteredList: MutableList<String>) {
-        locations = filteredList
-        notifyDataSetChanged()
+        holder.prefTextView.text = prefs[position]
     }
 
 }

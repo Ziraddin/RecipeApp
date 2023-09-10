@@ -1,7 +1,7 @@
 package com.zireddinismayilov.recipeapp.SettingAccount
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.zireddinismayilov.recipeapp.R
 import com.zireddinismayilov.recipeapp.databinding.ActivitySettingAccountBinding

@@ -11,11 +11,28 @@
         tools:layout="@layout/fragment_selecting_country_page">
         <action
             android:id="@+id/action_selectingCountryPage_to_selectingPrefrencesPage"
-            app:destination="@id/selectingPrefrencesPage" />
+            app:destination="@id/selectingPrefrencesPage"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/selectingPrefrencesPage"
         android:name="com.zireddinismayilov.recipeapp.SettingAccount.Fragments.SelectingPrefrencesPage"
         android:label="fragment_selecting_prefrences_page"
-        tools:layout="@layout/fragment_selecting_prefrences_page" />
+        tools:layout="@layout/fragment_selecting_prefrences_page">
+        <action
+            android:id="@+id/action_selectingPrefrencesPage_to_createProfilePage"
+            app:destination="@id/createProfilePage"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProfilePage"
+        android:name="com.zireddinismayilov.recipeapp.SettingAccount.Fragments.CreateProfilePage"
+        android:label="fragment_create_profile_page"
+        tools:layout="@layout/fragment_create_profile_page" />
 </navigation>
